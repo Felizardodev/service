@@ -1,5 +1,5 @@
 # Introdução:
-Projeto de estudo, envolvendo a criação de serviços com JSON, inclusos: **SOMA**, **DIVISÃO**, **MULTIPLICAÇÃO** e **CALCULDO DE IMC**.
+Projeto de estudo, envolvendo a criação de serviços com JSON, inclusos: **SOMA**, **DIVISÃO**, **MULTIPLICAÇÃO** e **CALCULO DO DE IMC**.
 
 ## Pré- requisitos:
 * JSON
