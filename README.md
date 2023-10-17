@@ -10,7 +10,7 @@ Projeto de estudo, envolvendo a criação de serviços com JSON, inclusos: **SOM
 ### Conhecimentos necessários:
 
 Tecnologias       | Nível de conhecimento sugerido
-----------------  | --------
+:---------------: | :--------:
 JSon              | Básico
 Java Spring Boot  | Intermediário
 Git e Git Hub     | Básico
