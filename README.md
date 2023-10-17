@@ -14,3 +14,5 @@ Tecnologias       | Nível de conhecimento sugerido
 JSon              | Básico
 Java Spring Boot  | Intermediário
 Git e Git Hub     | Básico
+API RESTful       | Básico
+Padrão MVC        | Básico
