@@ -13,7 +13,7 @@ public class serviceApplication {
     @Bean
     public CommandLineRunner initialization (){
         return args -> {
-            System.out.println("Hello World!");
+            System.out.println("Hello World! Meus primeiros services");
         };
     }
 }
