@@ -3,7 +3,7 @@ Projeto de estudo, envolvendo a criação de serviços com JSON, inclusos: **SOM
 
 ## Pré- requisitos:
 * JSON
-* SourceTree
+* SourceTree https://icons8.com.br/icon/Qu2sYlfDM0qZ/sourcetree
 * Intellij
 * Git Bash
 
