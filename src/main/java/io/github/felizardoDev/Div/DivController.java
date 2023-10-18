@@ -1,36 +1,32 @@
 package io.github.felizardoDev.Div;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*; //Anotações relacionadas ao Spring MVC
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@RestController
+@RestController //Retornar repostas HTTP
 @RequestMapping(value = "/api")
 public class DivController {
-    private DivService divService;
+    private DivService divService; //Injeção de dependência
 
-    public DivController(DivService divService) {
+    public DivController(DivService divService) { //Construtor da class DivController
         this.divService = divService;
     }
     @GetMapping("/make-division")
     @ResponseBody
-    public Map<String, Object> divide(@RequestParam Map<String, String> params) {
-        Map<String, Object> result = new HashMap<>();
+    public Map<String, Object> divide(@RequestParam double dividend, @RequestParam double divisor) {
+        //O método retorna um map contendo chave como String e valore como Object.
+        Map<String, Object> result = new LinkedHashMap<>(); //Armazenar o resultado da operação.
 
-        try {
-            double dividend = Double.parseDouble(params.get("dividend"));
-            double divisor = Double.parseDouble(params.get("divisor"));
+        try { //try-catch tenta executar a operação e se ocorrer uma exceção, ela é capturada e tratada no bloco catch.
             double divisionResult = divService.divide(dividend, divisor);
+            //Chama o método divide do serviço DivService para calcular a divisão.
 
-            result.put("result", divisionResult);
-        } catch (IllegalArgumentException e) {
+            result.put("result", divisionResult); //Adiciona o resultado ao mapa result com a chave "result".
+        } catch (IllegalArgumentException e) { //Retorna a msg de erro se o divisor for 0.
             result.put("error", e.getMessage());
         }
-
         return result;
     }
-
 }
