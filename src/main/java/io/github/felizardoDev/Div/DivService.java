@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Setter
 
 public class DivService {
-    public double split(double dividend, double divisor) {
+    public double divide(double dividend, double divisor) {
         if (divisor == 0) {
             throw new IllegalArgumentException("It is impossible for the divisor to be 0");
         }
