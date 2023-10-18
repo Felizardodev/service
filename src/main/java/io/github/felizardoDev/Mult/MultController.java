@@ -18,7 +18,7 @@ public class MultController {
     // ex: api/make-division?dividend=25&divisor=0
     @ResponseBody
     public Map<String, Object> makeMultiplication(@RequestParam double num1, @RequestParam double num2) {
-        Map<String, Object> result = new LinkedHashMap<>();
+        Map<String, Object> result = new LinkedHashMap<>(); //Armazenar o resultado da operação.
 
         double multiplicationResult = multService.multiplication(num1, num2); //Calcula a mult usando o service.
 
